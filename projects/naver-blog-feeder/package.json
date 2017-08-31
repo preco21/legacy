@@ -1,0 +1,12 @@
+{
+	"name" : "NaverBlogNotification",
+	"main" : "app://preco/package/index.html",
+	"single-instance" : true,
+	"window" : {
+		"show" : false,
+		"toolbar" : false,
+		"resizable" : false,
+		"width" : 650,
+		"height" : 480
+	}
+}

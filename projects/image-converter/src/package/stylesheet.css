@@ -1,0 +1,80 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.btn-color-1 {
+	background-color: #efefef;
+	color: #a3a3a3;
+}
+
+.wrapper {
+	height: 77%;
+}
+
+.footer {
+	height: 23%;
+}
+
+.title-text {
+	color: #a4a4a4;
+	padding: 3.6% 5.6%;
+	float: left;
+	font-size: 18.3px;
+}
+
+.drop-area {
+	display: table;
+	width: 100%;
+	height: 60%;
+}
+
+.drop-here {
+	display: table-cell;
+	color: #696868;
+	font-size: 29px;
+	vertical-align: middle;
+	text-align: center;
+	transition: all 0.364s ease-in-out;
+}
+
+.dropzone-out {
+	opacity: 0.6;
+}
+
+.dropzone-hover {
+	opacity: 1;
+}
+
+.dropzone-converting {
+	color: #6d6d6d;
+	font-size: 27px;
+}
+
+.title-bar {
+	width: 100%;
+	height: 28%;
+	-webkit-app-region: drag;
+}
+
+.title-button {
+	display: inline-block;
+	float: right;
+	width: 28px;
+	height: 28px;
+	background: url(app://preco/package/images/close.png) no-repeat;
+	opacity: 0.7;
+	margin: 3.5%;
+	-webkit-app-region: no-drag;
+	transition: opacity 0.174s ease-in-out;
+}
+
+.title-button:hover {
+	opacity: 0.9;
+}

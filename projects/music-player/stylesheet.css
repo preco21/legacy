@@ -1,0 +1,128 @@
+﻿body {
+	overflow: hidden;
+	padding-top: 56px;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align:center;
+}
+
+.button-margin-1 {
+	margin-left: 9px;
+}
+
+.navbar-margin-1 {
+	margin-left: 12px;
+}
+
+.navbar-margin-2 {
+	margin-left: 20px;
+}
+
+.navbar-margin-3 {
+	margin-left: 14px;
+}
+
+.list-margin-1 {
+	margin-left: 19px;
+}
+
+.font-style-1 {
+	font-size: 18px;
+	text-shadow: 0 0 9px #FFF;
+}
+
+.glow-1 {
+	box-shadow: 0 0 5px #FFF;
+}
+
+.font-set-1 {
+	font-weight: bold;
+	color: white;
+}
+
+.point-cursor {
+	cursor: pointer;
+}
+
+#blogFrame {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#mainFrame {
+	overflow: hidden;
+}
+
+#musicName {
+	margin-left: 5px;
+	margin-top: 14px;
+	font-weight: bold;
+	width: 175px!important;
+	height: 25px!important;
+}
+
+#musicProgressBarPost {
+	margin-top: 21px;
+	margin-left: 23px;
+	margin-right: 5px;
+	width: 271px;
+	height: 14px;
+}
+
+#musicProgressBar {
+	width: 0%;
+}
+
+#musicShuffleToggleIcon {
+	margin-top: 18px;
+}
+
+#musicVolumePost {
+	margin-top: 21px;
+	margin-left: 12px;
+	width: 75px;
+	height: 13px;
+}
+
+#musicVolumeBar {
+	width: 0%;
+}
+
+#musicVolumeIcon {
+	margin-top: 18px;
+}
+
+#musicDuration {
+	margin-top: 18px;
+	font-size: 16px;
+	margin-right: 0px;
+	text-shadow: 0 0 10px #FFF;
+}
+
+.musicListSet {
+	overflow-y: scroll;
+	height: 270px;
+}
+
+.slider-bar{
+	display: block;
+	width: 0;
+	position: relative;
+	visibility: hidden;
+}
+
+.slider, .slider-bar{
+	height: 10px;
+}

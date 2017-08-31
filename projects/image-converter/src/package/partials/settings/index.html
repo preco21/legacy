@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Setting - ImageConverter by Preco</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" media="screen" href="app://preco/package/stylesheet/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<script src="app://preco/package/external/chromium-fix.min.js" async></script>
+		<script src="external/resize-fix.js" async></script>
+	</head>
+	<body>
+		<input id="save-dir-dialog" style="display:none" type="file" nwdirectory>
+		<section class="main-wrap">
+			<section title="변환하려는 타입을 선택합니다.">
+				<h2 class="text-label">변환 타입 </h2>
+				<div class="select-box size-120 margin-right-5">
+					<select id="type-select" class="form-control">
+						<option>png</option>
+						<option>jpg</option>
+						<option>bmp</option>
+						<option>tga</option>
+						<option>gif</option>
+						<option>tiff</option>
+						<option>직접입력</option>
+					</select>
+				</div>
+				<div class="text-box">
+					<input id="type-input" class="form-control" type="text">
+				</div>
+			</section>
+			<section class="margin-top-20 clear" title="파일을 저장하는 방식을 변경합니다.">
+				<h2 class="text-label">파일 저장 </h2>
+				<div class="select-box size-230">
+					<select id="save-select" class="form-control">
+						<option>같은 위치에 자동으로 저장</option>
+						<option>저장 위치 직접 선택</option>
+					</select>
+				</div>
+			</section>
+			<section class="margin-top-20 clear" title="크기조절 방식과 변경할 크기를 지정합니다.">
+				<h2 class="text-label">크기 조절 </h2>
+				<div class="select-box size-120 pull-left margin-right-10">
+					<select id="size-select" class="form-control">
+						<option>Percent</option>
+						<option>W / H</option>
+					</select>
+				</div>
+				<div id="sizeset-1">
+					<div class="text-box size-120">
+						<div class="input-group">
+							<input id="size-1" class="form-control" type="number" min="0" max="1000" placeholder="100">
+							<div class="input-group-addon">%</div>
+						</div>
+					</div>
+				</div>
+				<div id="sizeset-2" class="hidden">
+					<div class="text-box size-105">
+						<div class="input-group">
+							<input id="size-2-1" class="form-control" type="number" min="0" max="1000" placeholder="100">
+							<div class="input-group-addon">px</div>
+						</div>
+					</div>
+					<div class="text-box size-105">
+						<div class="input-group">
+							<input id="size-2-2" class="form-control" type="number" min="0" max="1000" placeholder="100">
+							<div class="input-group-addon">px</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="margin-top-20 clear" title="투명한 부분을 채울 색상을 지정합니다.">
+				<h2 class="text-label">배경색 &nbsp;&nbsp;&nbsp;</h2>
+				<div class="color-picker">
+					<input id="background-color" class="form-control" type="color">
+				</div>
+			</section>
+			<section class="margin-top-20 clear" title="png, gif와 같이 알파채널을 지원하는 타입에 대해 원본 이미지의 투명도 유지 여부를 설정합니다.">
+				<h2 class="text-label">배경 투명</h2>
+				<input id="transparent-background" class="checkbox-set" type="checkbox" checked>
+			</section>
+			<section class="margin-top-59 clear" title="설정값을 기본값으로 초기화합니다">
+				<button id="reset-settings" class="btn btn-lg btn-danger col-xs-12">설정 초기화</button>
+			</section>
+		</section>
+		
+		<script src="app://preco/package/external/settings.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

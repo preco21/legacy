@@ -1,0 +1,35 @@
+.margin-0 {
+	margin: 0px;
+}
+
+.margin-top-17 {
+	margin-top: 17px;
+}
+
+.margin-top-19 {
+	margin-top: 19px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-bottom-5 {
+	margin-bottom: 5px;
+}
+
+.info-text {
+	font-size: 1.92em;
+}
+
+.submit-button {
+	font-size: 30px;
+}
+
+.warn-text {
+	line-height: 22px;
+}
+
+.history-back {
+	position: absolute;
+}

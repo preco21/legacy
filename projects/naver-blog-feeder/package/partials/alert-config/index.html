@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>네이버 블로그 새 포스트 알리미 | 알림 설정</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" media="screen" href="app://preco/package/stylesheet/bootstrap.min.css">
+		<link rel="stylesheet" media="screen" href="app://preco/package/stylesheet/bootstrap-switch.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<script src="app://preco/package/external/chromium-fix.min.js" async></script>
+		<script src="app://preco/package/external/resize-fix.js" async></script>
+	</head>
+	<body>
+		<input id="file-dialog" style="display:none" type="file" accept=".mp3">
+		<header>
+			<nav class="navbar navbar-fixed" role="navigation">
+			 	<div class="container-fluid">
+					<div class="navbar-header">
+						<button id="history-back" class="btn btn-link btn-lg navbar-left history-back">뒤로가기</button>
+						<h4 class="navbar-text text-info text-center margin-top-17">알림 설정</h4>
+					</div>
+			 	</div>
+			</nav>
+		</header>
+		
+		<section class="container margin-top-30">
+			<section title="새로운 포스트의 소식을 업데이트하는 시간간격입니다 (1 ~ 1200)">
+				<h1 class="col-xs-8 margin-top-8">포스트 갱신주기</h1>
+				<div class="input-group col-xs-4">
+					<input id="update-rate" class="form-control input-lg" type="number" min="1" max="1200" step="1" value="0">
+					<span class="input-group-addon">초</span>
+				</div>
+			</section>
+			
+			<section class="margin-top-17" title="알림이 지속되는 시간입니다 (1 ~ 60)">
+				<h1 class="col-xs-8 margin-top-8">알림 지속시간</h1>
+				<div class="input-group col-xs-4">
+					<input id="alert-duration" class="form-control input-lg" type="number" min="1" max="60" step="1" value="0">
+					<span class="input-group-addon">초</span>
+				</div>
+			</section>
+			
+			<section class="margin-top-17" title="알림음을 설정합니다 'mp3'만 지원합니다.">
+				<h1 class="col-xs-4 margin-top-8">알림음</h1>
+				<h1 class="col-xs-8 margin-top-8">[<span id="alert-sound-name">-</span>]</h1>
+				<button id="alert-sound-select" class="btn btn-default col-xs-4 margin-top-15 margin-left-20">알림음 선택</button>
+				<h2 class="col-xs-4 margin-top-15 margin-left-70">알림음 켜기</h2>
+				<div class="col-xs-2 margin-top-20">
+					<input id="alert-toggle" class="checkbox-set-1" type="checkbox">
+				</div>
+			</section>
+			
+			<section title="설정을 초기화 합니다">
+				<h3 class="text-center col-xs-12 margin-bottom-0">설정은 자동으로 저장됩니다!</h3>
+				<button id="reset-setting" class="btn btn-danger btn-lg col-xs-12 margin-top-23">설정 초기화</button>
+			</section>
+		</section>
+		
+		<script src="app://preco/package/external/jquery-2.1.1.min.js"></script>
+		<script src="app://preco/package/external/bootstrap.min.js"></script>
+		<script src="app://preco/package/external/bootstrap-switch.min.js"></script>
+		<script src="app://preco/package/external/bootbox.min.js"></script>
+		<script src="app://preco/package/external/shared.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

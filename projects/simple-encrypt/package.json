@@ -1,0 +1,15 @@
+{
+	"name" : "SimpleEncrypt",
+	"main" : "app://preco/package/index.html",
+	"single-instance" : true,
+	"window" : {
+		"toolbar" : false,
+		"resizable" : false,
+		"width" : 500,
+		"height" : 400,
+		"min_width" : 500,
+		"max_width" : 500,
+		"min_height" : 400,
+		"max_height" : 400
+	}
+}

@@ -1,0 +1,29 @@
+.top-50 {
+	margin-top: 50px;
+}
+
+.top-30 {
+	margin-top: 30px;
+}
+
+.footer {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 200%;
+	}
+
+	h2 {
+		font-size: 200%;
+	}
+
+	.top-50 {
+		margin-top: 30px;
+	}
+
+	.top-30 {
+		margin-top: 20px;
+	}
+}

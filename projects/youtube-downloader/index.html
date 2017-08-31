@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Youtube 동영상 다운로더</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<noscript><meta http-equiv="refresh" content="0;url=http://prevl.org/templates/shared/enablejs/"></noscript>
+		
+		<meta name="description" content="유튜브 동영상을 다운로드하고 MP3로도 변환하여 저장할수 있도록 해주는 다운로더입니다">
+		<meta name="keywords" content="youtube, video, 유튜브, 동영상, 다운로드, MP3, 변환, 저장, 다운로더">
+		<meta name="author" content="plusb preco">
+		
+		<link rel="shortcut icon" href="//cdn.prevl.org/shared/shortcut-icon/favicon.ico">
+		<link rel="apple-touch-icon" href="//cdn.prevl.org/shared/shortcut-icon/apple-touch-icon.png">
+		
+		<link rel="stylesheet" media="screen" href="//cdn.prevl.org/shared/bootstrap-theme/css/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<script src="http://prevl.org/templates/shared/browser-update.js" async></script>
+	</head>
+	<body>
+		<section class="container">
+			<header class="page-header">
+				<blockquote><h1 class="text-center">Youtube 동영상 다운로더</h1></blockquote>
+			</header>
+			
+			<section class="jumbotron">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-8">
+							<input id="url-input" type="text" tabindex="1" class="form-control input-lg" placeholder="여기에 동영상 URL 또는 비디오ID 입력">
+						</div>
+						<button id="complete-button" tabindex="2" class="btn col-xs-4 btn-primary btn-lg">확인 <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</div>
+				</div>
+			</section>
+			
+			<div id="status" class="alert alert-info text-center">빈칸에 동영상 URL 또는 동영상 ID를 넣고 확인을 눌러주세요!</div>
+			
+			<section class="row top-50">
+				<img id="thumbnail" src="thumbnail.png" class="thumbnail text-center col-sm-offset-1 col-sm-2 hidden-xs" width="185px">
+				<h2 id="title" class="col-sm-8 text-center text-muted">먼저 URL을 로드해 주세요</h2>
+			</section>
+
+			<section id="download-link" class="list-group top-30"></section>
+				
+			<footer class="footer text-center">
+				<a href="http://prevl.org/templates/shared/footer-link.php">© Preco</a>
+			</footer>
+		</section>
+		
+		<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script src="//cdn.prevl.org/shared/external/polyfill.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<![endif]-->
+
+		<!--[if gte IE 9]><!-->
+			<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="external/base64.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

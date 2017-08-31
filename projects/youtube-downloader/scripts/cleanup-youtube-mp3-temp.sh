@@ -1,0 +1,1 @@
+find /volume1/web/service/dist/youtube-downloader/temp-mp3 -print -exec rm -f {} \;

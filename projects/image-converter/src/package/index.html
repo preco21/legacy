@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ImageConverter</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" media="screen" href="app://preco/package/stylesheet/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<script src="app://preco/package/external/chromium-fix.min.js" async></script>
+	</head>
+	<body>
+		<section class="wrapper">
+			<div class="title-bar">
+				<div id="close-button" class="title-button"></div>
+			</div>
+			<div class="drop-area" title="이미지를 이곳으로 끌어다 놓으세요">
+				<div id="dropzone" class="drop-here dropzone-out">DROP IMAGE HERE!</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<button id="open-setting" class="btn btn-sm btn-color-1 col-xs-10 col-xs-offset-1">Setting</button>
+		</footer>
+		
+		<script src="app://preco/package/external/image-convert.js"></script>
+		<script src="app://preco/package/external/settings.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>네이버 블로그 새 포스트 알리미 | 고급 설정</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" media="screen" href="app://preco/package/stylesheet/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<script src="app://preco/package/external/chromium-fix.min.js" async></script>
+		<script src="app://preco/package/external/resize-fix.js" async></script>
+	</head>
+	<body>
+		<input id="file-dialog" style="display:none" type="file">
+		<input id="file-dialog-2" style="display:none" type="file" accept=".json">
+		<header>
+			<nav class="navbar navbar-fixed" role="navigation">
+			 	<div class="container-fluid">
+					<div class="navbar-header">
+					 	<button id="history-back" class="btn btn-link btn-lg navbar-left history-back">뒤로가기</button>
+						<h4 class="navbar-text text-info text-center margin-top-17">고급 설정</h4>
+					</div>
+			 	</div>
+			</nav>
+		</header>
+		
+		<section class="container">
+			<h3 class="text-center text-success margin-top-0">설정 내보내기/가져오기</h3>
+			<button id="setting-export" class="btn btn-info btn-lg col-xs-12 margin-top-23">설정 내보내기</button>
+			<button id="setting-import" class="btn btn-primary btn-lg col-xs-12 margin-top-23">설정 가져오기</button>
+			<button id="list-export" class="btn btn-info btn-lg col-xs-12 margin-top-23">구독 리스트 내보내기</button>
+			<button id="list-import" class="btn btn-primary btn-lg col-xs-12 margin-top-23">구독 리스트 가져오기</button>
+		</section>
+		
+		<script src="app://preco/package/external/jquery-2.1.1.min.js"></script>
+		<script src="app://preco/package/external/bootstrap.min.js"></script>
+		<script src="app://preco/package/external/bootbox.min.js"></script>
+		<script src="app://preco/package/external/shared.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

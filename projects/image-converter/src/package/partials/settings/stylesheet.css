@@ -1,0 +1,76 @@
+html, body {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.main-wrap {
+	padding: 23px;
+}
+
+.text-label {
+	float: left;
+	margin: 0px;
+	margin-right: 50px;
+}
+
+.checkbox-set {
+	display: inline-block;
+	width: 29px;
+	height: 29px;
+}
+
+.select-box {
+	display: inline-block;
+	width: 100px;
+	margin: 0px;
+}
+
+.size-105 {
+	width: 105px;
+}
+
+.size-120 {
+	width: 120px;
+}
+
+.size-230 {
+	width: 230px;
+}
+
+.text-box {
+	display: inline-block;
+	margin: 0px;
+	margin-left: 10px;
+}
+
+.input-group {
+	margin-left: 0px;
+}
+
+.color-picker {
+	display: inline-block;
+	width: 100px;
+	margin: 0px;
+}
+
+.clear {
+	clear: both;
+}
+
+.margin-top-59 {
+	margin-top: 59px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-right-5 {
+	margin-right: 5px;
+}
+
+.margin-right-10 {
+	margin-right: 10px;
+}

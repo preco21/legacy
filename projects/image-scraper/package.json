@@ -1,0 +1,13 @@
+{
+	"name" : "Image Scraper",
+	"main" : "app://preco/package/index.html",
+	"single-instance" : false,
+	"window" : {
+		"toolbar" : false,
+		"resizable" : true,
+		"width" : 820,
+		"min_width" : 705,
+		"height" : 560,
+		"min_height" : 500
+	}
+}

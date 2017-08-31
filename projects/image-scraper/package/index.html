@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Image Scraper</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" href="app://preco/package/css/materialize.min.css">
+		<link rel="stylesheet" href="app://preco/package/css/photoswipe.css">
+		<link rel="stylesheet" href="app://preco/package/default-skin/default-skin.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<script src="app://preco/package/libs/chromium-shim.min.js" async></script>
+	</head>
+	<body>
+		<div id="main-navbar" class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper orange">
+					<form id="search-form">
+						<div class="input-field">
+							<input id="search-input" type="search" autocomplete="off" autofocus>
+							<label for="search-input"><i class="mdi-action-search"></i></label>
+							<i id="clear-search-input" class="mdi-navigation-close"></i>
+						</div>
+					</form>
+				</div>
+			</nav>
+		</div>
+
+		<section class="image-container">
+			<div id="image-set" class="row image-set">
+			</div>
+		</section>
+
+		<div class="fixed-action-btn setting-button">
+			<a class="btn-floating btn-large orange">
+				<i class="mdi-content-add"></i>
+			</a>
+			<ul>
+				<li>
+					<a id="download-all-images-button" class="btn-floating btn green waves-effect waves-light" title="모든 이미지 다운로드"><i class="mdi-file-file-download"></i></a>
+				</li>
+				<li>
+					<a id="open-save-directory-button" class="btn-floating btn yellow waves-effect waves-light" title="저장위치 열기">
+						<i class="mdi-file-folder"></i>
+					</a>
+				</li>
+				<li>
+					<a class="btn-floating btn blue waves-effect waves-light" href="#setting-modal" data-toggle="modal" title="설정">
+						<i class="mdi-action-settings"></i>
+					</a>
+				</li>
+				<li>
+					<a id="developer-info-button" class="btn-floating btn pink waves-effect waves-light" href="#dev-info-modal" data-toggle="modal" title="개발자 정보"><i class="mdi-action-info-outline"></i></a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="dev-info-modal" class="modal">
+			<div class="modal-content">
+				<h4>Developer Info</h4>
+				<div class="row">
+					<div class="col s12">
+						<h5>dev &lt;3 by Plusb Preco</h5>
+						<h5>blog: <a id="devi-link">http://blog.prevl.org</a></h5>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a class="modal-action modal-close waves-effect waves-gray btn-flat" href="#">닫기</a>
+			</div>
+		</div>
+
+		<div id="setting-modal" class="modal">
+			<div class="modal-content">
+				<h4>Settings</h4>
+				<div class="row">
+					<div class="input-field col s12">
+						<h5>이미지 저장 경로 지정</h5>
+						<select id="save-method-select" class="browser-default">
+							<option value="1">프로그램 실행 폴더에 저장</option>
+							<option value="2">임의 지정</option>
+						</select>
+
+						<div id="save-directory-file-warpper" class="input-field file-field" hidden>
+							<input id="save-directory-text" class="file-path validate" type="text" readonly>
+							<div class="btn">
+								<span><i class="mdi-file-folder"></i></span>
+								<input id="save-directory-file" type="file" nwdirectory>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a class="modal-action modal-close waves-effect waves-gray btn-flat" href="#">닫기</a>
+			</div>
+		</div>
+		
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+			<!-- Background of PhotoSwipe. 
+				 It's a separate element, as animating opacity is faster than rgba(). -->
+			<div class="pswp__bg"></div>
+
+			<!-- Slides wrapper with overflow:hidden. -->
+			<div class="pswp__scroll-wrap">
+
+				<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+				<div class="pswp__container">
+					<!-- don't modify these 3 pswp__item elements, data is added later on -->
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+				</div>
+
+				<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+				<div class="pswp__ui pswp__ui--hidden">
+
+					<div class="pswp__top-bar">
+
+						<!--  Controls are self-explanatory. Order can be changed. -->
+
+						<div class="pswp__counter"></div>
+
+						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+						<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+						<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+						<!-- element will get class pswp__preloader--active when preloader is running -->
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+							  <div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							  </div>
+							</div>
+						</div>
+					</div>
+
+					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+					</button>
+
+					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+					</button>
+
+					<div class="pswp__caption">
+						<div class="pswp__caption__center"></div>
+					</div>
+
+				  </div>
+			</div>
+		</div>
+		
+		<script src="app://preco/package/libs/jquery.min.js"></script>
+		<script src="app://preco/package/libs/materialize.min.js"></script>
+		<script src="app://preco/package/libs/photoswipe.min.js"></script>
+		<script src="app://preco/package/libs/photoswipe-ui-default.min.js"></script>
+		<script src="app://preco/package/libs/parser.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

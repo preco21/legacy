@@ -1,0 +1,61 @@
+html {
+	border: 4.2px solid #f3f3f3;
+	border-radius: 7px;
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	padding: 7.4px;
+	opacity: 0.87;
+	transition: opacity .13s ease-in-out;
+}
+
+body:focus,
+body:hover {
+	opacity: 1;
+}
+
+.content-area {
+	cursor: pointer;
+	width: 91%;
+}
+
+.title {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-left: 5px;
+	white-space: nowrap;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.content {
+	font-size: 1.2em;
+	margin: 4px 5px;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+}
+
+.close-btn {
+	margin-right: 6px;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0.33;
+	}
+	
+	to {
+		opacity: 0.87;
+	}
+}
+ 
+.fade-in {
+	opacity: 0.47;
+	-webkit-animation: fadeIn ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-duration: 0.37s;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>-</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" media="screen" href="app://preco/package/stylesheet/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<script src="app://preco/package/external/chromium-fix.min.js" async></script>
+		<script src="app://preco/package/external/resize-fix.js" async></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-fixed" role="navigation">
+			 	<div class="container-fluid">
+					<div class="navbar-header">
+						<button id="history-back" class="btn btn-link btn-lg navbar-left history-back">뒤로가기</button>
+						<h4 class="navbar-text text-success text-center margin-top-17">[<span id="subscribe-target" class="text-primary bg-info"></span>]의 포스트 리스트</h4>
+					</div>
+			 	</div>
+			</nav>
+		</header>
+		
+		<section class="container">
+			<h3 class="text-center text-info margin-top-0">리스트를 클릭하면 포스트로 이동합니다!</h3>
+			<section class="margin-top-17">
+				<div id="content-container" class="list-group list-content">
+				</div>
+			</section>
+			
+			<section class="margin-top-17">
+				<button id="remove-subscribe" class="btn btn-danger btn-lg col-xs-12">구독 삭제</button>
+			</section>
+		</section>
+		
+		<script src="app://preco/package/external/jquery-2.1.1.min.js"></script>
+		<script src="app://preco/package/external/shared.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
