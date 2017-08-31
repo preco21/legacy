@@ -38,7 +38,7 @@ When I were working on those project, I didn't think of internalization unlike t
 
 > Simple `iframe` based web music player
 
-**Note:** Please note that I removed all original musics to not to violate copy-rights.
+**Note:** Please note that I removed all original musics to not to violate copyrights.
 
 ![music player](media/music-player.png)
 
