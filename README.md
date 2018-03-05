@@ -4,7 +4,7 @@
 
 Just note that all those codes are pretty old and maybe outdated, may or may not work in some ways. Please be aware of it if you are going to reuse the code.
 
-When I were working on those project, I didn't think of internalization unlike these day, so most of the langauge used on the applications is Korean which is my native langauge.
+When I were working on those project, I didn't think of internalization unlike these day. So you may find that the language used on the applications are all Korean which is my native langauge. I hope you can understand it with service like [Google Translate](https://translate.google.com/).
 
 ## Projects
 
