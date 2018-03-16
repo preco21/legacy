@@ -2,9 +2,9 @@
 
 > :beginner: A repository of my legacy non-git projects
 
-Just note that all those codes are pretty old and maybe outdated, may or may not work in some ways. Please be aware of it if you are going to reuse the code.
+Just note that all those codes are pretty old and may be outdated, so may or may not work anyhow. Please keep in mind that in case if you are going to reuse the code.
 
-When I were working on those project, I didn't think of internalization unlike these day. So you may find that the language used on the applications are all Korean which is my native langauge. I hope you can understand it with service like [Google Translate](https://translate.google.com/).
+Back in the day, when I was working on those projects, I didn't aware the importance of internationalization unlike now. So you may notice that the language used in the applications are all writen in Korean. I hope you can manage it properly with the service like [Google Translate](https://translate.google.com/) :joy:.
 
 ## Projects
 
